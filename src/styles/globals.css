@@ -1,0 +1,126 @@
+/* Estilos globales adicionales para QVD to CSV Converter */
+
+/* Gradientes personalizados */
+.gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-secondary {
+  background: linear-gradient(45deg, #2196F3 30%, #21CBF3 90%);
+}
+
+/* Animaciones suaves */
+.smooth-transition {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Estados de hover mejorados */
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Scrollbar personalizado */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #5a67d8 0%, #6b46c1 100%);
+}
+
+/* Efectos de cristal */
+.glass-effect {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Pulsing animation for loading states */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Estilos para el drag and drop */
+.dropzone-active {
+  border-color: #667eea !important;
+  background: rgba(102, 126, 234, 0.1) !important;
+}
+
+.dropzone-reject {
+  border-color: #ef4444 !important;
+  background: rgba(239, 68, 68, 0.1) !important;
+}
+
+/* Mejoras para dispositivos móviles */
+@media (max-width: 768px) {
+  .mobile-friendly {
+    padding: 1rem !important;
+  }
+  
+  .mobile-stack {
+    flex-direction: column !important;
+  }
+}
+
+/* Estados de carga elegantes */
+.loading-shimmer {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Estilos para tooltips mejorados */
+.custom-tooltip {
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-radius: 8px !important;
+  font-size: 0.875rem !important;
+  padding: 8px 12px !important;
+}
+
+/* Efectos de enfoque mejorados */
+.focus-ring:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
+
+/* Estilos para cards con efecto elevación */
+.elevated-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.elevated-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
